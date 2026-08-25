@@ -1,0 +1,52 @@
+form {
+    max-width: 600px;
+}
+
+label {
+    display: block;
+    margin-bottom: 7px;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+input {
+    widthh: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 7px;
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+
+.btn-simpan {
+    background-color: #16a34a;
+    color: white;
+    border: none;
+    padding: 12px 22px;
+    border-radius: 7px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.btn-kembali:hover {
+    background-color: #15803d
+}
+
+.btn-kembali {
+    display: inline-block;
+    background-color: #6474db;
+    color: white;
+    padding: 12px 20px;
+    text-decoration: none;
+    border-radius: 7px;
+    font-size: 15px;
+    font-weight: bold;
+    margin-left: 8px;
+    transition:0.2s;
+}
+
+.btn-kembali:hover {
+    background-color: #475569;
+}

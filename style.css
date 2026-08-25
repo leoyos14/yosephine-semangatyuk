@@ -1,52 +1,121 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     font-family: Arial, sans-serif;
-    background: #f4f4f4;
-    padding: 20px;
+    background-color: #f3f4f6;
+    margin: 0;
+    padding: 40px 20px;
 }
 
 .container {
-    max-width: 900px;
-    margin:  auto;
-    background: #fff;
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+    background-color: white;
     padding: 30px;
-    border-radius: 10px;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
 }
 
 h1 {
-    margin-bottom: 20px;
+    margin-top: 0;
+    margin-bottom: 25px;
+    color: #111b27;
 }
 
 .tombol {
     display: inline-block;
-    padding: 10px 15px;
-    background: #2196f3;
+    background-color: #2563eb;
     color: white;
+    padding: 11px 18px;
     text-decoration: none;
-    border-radius: 5px;
-    margin-bottom: 20px
+    border-radius: 7px;
+    margin-bottom: 20px;
 }
 
-table {
+.tombol:hover {
+    bakground-color: #1d4ed8;
+}
+
+.tabel-produk {
     width: 100%;
     border-collapse: collapse;
+    margin-top: 10px;
 }
 
-th,
-td {
-    border: 1px solid #ddd;
-    padding: 12px;
-}
-
-input {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
-}
-
-button {
-    padding: 10px 20px;
-    background: #2196f3;
+.tabel-produk th {
+    background-color: #2563eb;
     color: white;
-    border: none;
-    border-radius: 5px;
+    padding: 14px;
+    text-align: center;
+}
+
+.tabel-produk th:nth-child(1) 
+.tabel-produk th:nth-child(1) {
+    width: 8%;
+    text-align: center;
+}
+
+.tabel-produk th:nth-child(2)
+.tabel-produk th:nth-child(2) {
+    width: 8%;
+    text-align: left;
+}
+
+.tabel-produk th:nth-child(3) 
+.tabel-produk th:nth-child(3) {
+    width: 22%;
+    text-align: left;
+}
+
+.tabel-produk th:nth-child(4)
+.tabel-produk th:nth-child(4) {
+    width: 15%;
+    text-align: center;
+}
+
+.tabel-produk th:nth-child(5)
+.tabel-produk th:nth-child(5) {
+    width: 25%;
+    text-align: center;
+}
+
+.edit {
+    display: inline-block;
+    background-color: #f59e0b;
+    color: white;
+    padding: 7px 12px;
+    text-decoration: none;
+    border-radius: 7px;
+    margin-right: 5px;
+}
+
+.edit:hover {
+    background-color: #d97706;
+}
+
+.hapus {
+    display: inline-block;
+    background-color: #ef4444;
+    color: white;
+    padding: 7px 12px;
+    text-decoration: none;
+    border-radius: 5px
+}
+
+.hapus:hover {
+    background-color: #dc2626;
+}
+
+@media (max-width: 700px) {
+    .container {
+        padding: 20px;
+        overflow-x: auto;
+    }
+
+    .tabel-produk {
+        max-width: 700px;
+    }
 }
