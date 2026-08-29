@@ -1,0 +1,62 @@
+.btn-update {
+    display: inline-block;
+    background-color: #f59e0b;
+    color: white;
+    border: none;
+    padding: 12px 22px;
+    border-radius: 7px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.btn-update:hover {
+    background-color: #d97706;
+}
+
+.btn-update:active {
+    transform: scale(0.97);
+}
+
+.btn-kembali {
+    display: inline-block;
+    background-color: #6b7280;
+    color: white;
+    padding: 12px 20px;
+    text-decoration: none;
+    border-radius: 7px;
+    font-size: 15px;
+    font-weight: bold;
+    margin-left: 8px;
+    transition: 0.2s;
+}
+
+.btn-kembali:hover {
+    background-color: #475569;
+}
+
+.btn-kembali:active {
+    transform: scale(0.97);
+}
+
+label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 7px;
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #d1d5db;
+    border-radius: 7px;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+input:focus {
+    outline: none;
+    border-color: #2563eb;  
+}

@@ -2,7 +2,7 @@
 
 include 'koneksi.php';
 
-$data = mysqli_query($koneksi, "SELECT * FROM produk ");
+$data = mysqli_query($koneksi, "SELECT * FROM produk");
 
 ?>
 
@@ -35,7 +35,7 @@ $data = mysqli_query($koneksi, "SELECT * FROM produk ");
 <tbody>
     <?php
     $no = 1;
-    while ($produk = mysqli_fetch_array($data)) {
+    while ($produk = mysqli_fetch_assoc($data)) {
         ?>
 
         <tr>
@@ -49,7 +49,9 @@ $data = mysqli_query($koneksi, "SELECT * FROM produk ");
         <td>
             <?=  $produk['stok']; ?></td>
             <td class="aksi">
-                <a href="edit.php"?id=<?=  $produk['id']; ?> class="edit">Edit</a>
+                <a href="edit.php?id=<?= $produk['id']; ?>" class="edit">
+    Edit
+</a>
                 <a href="hapus.php?id=<?=  $produk['id']; ?>" class="hapus" onclick="return confirm('Apakah Anda yakin ingin menghapus produk ini?')">Hapus</a>
             </td>
 </tr>
